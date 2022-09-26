@@ -1,0 +1,23 @@
+<div style="margin-left: 30%; margin-top: 10%;" >
+    <h1 style="padding-left: 5%;">Customer Login</h1>
+    
+    
+    <form>
+    <div  style="width: 30%;padding-left: 6%; ">
+        <label >Username</label>
+    <input type="text"   id="exampleInputEmail1" placeholder="Enter username" name="username"  [(ngModel)]="username"#tx1 >
+    
+</div>
+
+<div style="width: 30%;padding-left: 6%; ">
+    <label>Password</label>
+   <input type="password"   placeholder="Enter password" name="upasswd" [(ngModel)]="upasswd">
+</div>
+
+   <input type="submit" style="background-color: palevioletred; margin-left: 6%; "  value="login" (click)="getValidation(tx1)">
+   
+    </form>
+    <br>
+    <div style="padding-left: 6%;"><b>{{msg}}</b></div>
+</div>
+<router-outlet></router-outlet>

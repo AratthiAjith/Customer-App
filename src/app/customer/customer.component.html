@@ -1,0 +1,46 @@
+<h1 style="color: hsl(270, 50%, 40%);">CUSTOMER List</h1>
+
+<input type="text" placeholder="Enter Customer Id" [(ngModel)]="search">
+<input type="button" value="search" (click)="OnClickSearch()">
+<br>
+<br>
+
+<table border="1" style="background-color: papayawhip; font-style: italic;">
+  
+  <tr>
+    <th>Customer ID</th>
+    <th>FirstName</th>
+    <th>LastName</th>
+    <th>maidenName</th>
+    <th>Age</th>
+    <th>gender</th>
+    <th>email</th>
+    <th>IMAGE</th>
+    <th>PHONE</th>
+    <th>BIRTHDATE</th>
+    <th>BLOOD-GROUP</th>
+    <th>HEIGHT</th>
+    <th>WEIGHT</th>
+    <th>EYECOLOR</th>
+    <th>HAIR</th>
+  </tr>
+  <tr *ngFor="let c of cus1">
+    <td>{{c.id}}</td>
+    <td>{{c.firstName}}</td>
+    <td>{{c.lastName}}</td>
+    <td>{{c.maidenName}}</td>
+    <td>{{c.age}}</td>
+    <td>{{c.gender}}</td>
+    <td>{{c.email}}</td>
+    <td>{{c.image}}<!--<img src="{{c.image}}">--></td>
+    <td>{{c.phone}}</td>
+    <td>{{c.birthDate}}</td>
+    <td>{{c.bloodGroup}}</td>
+    <td>{{c.height}}</td>
+    <td>{{c.weight}}</td>
+    <td >{{c.eyeColor}}</td>
+    <td >{{c.hair}}</td>
+    
+  </tr>
+</table>
+<router-outlet></router-outlet>

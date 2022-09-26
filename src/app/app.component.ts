@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { Customer } from './customer';
+import { CustomerService } from './customer.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +10,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Customer-App';
+  
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
 }
